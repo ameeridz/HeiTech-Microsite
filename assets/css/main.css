@@ -45,7 +45,7 @@
 }
 
 .dark-background {
-  --background-color: #08005e;
+  --background-color: #08005ecc;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #0c0091;
@@ -176,11 +176,7 @@ h6 {
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-<<<<<<< HEAD
-  --background-color: ##10058cc4;
-=======
-  --background-color: #10058cc4;
->>>>>>> c68ac7be028cdfd2afa31fc50bea31b1f327d81e
+  --background-color: #08006485;
 }
 
 /*--------------------------------------------------------------
@@ -731,7 +727,7 @@ h6 {
 --------------------------------------------------------------*/
 section,
 .section {
-  color: var(--default-color);
+  color: #ffe09e;
   background-color: var(--background-color);
   padding: 60px 0;
   scroll-margin-top: 100px;
@@ -841,10 +837,10 @@ section,
 }
 
 .hero .btn-get-started {
-  color: var(--contrast-color);
+  color: #000000;
   background: var(--accent-color);
   font-family: var(--heading-font);
-  font-weight: 400;
+  font-weight: 800;
   font-size: 15px;
   letter-spacing: 1px;
   display: inline-block;
@@ -921,20 +917,20 @@ section,
   animation: move-forever1 10s linear infinite;
   animation-delay: -2s;
   fill: var(--default-color);
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .hero .wave2 use {
   animation: move-forever2 8s linear infinite;
   animation-delay: -2s;
-  fill: var(--default-color);
+  fill: #ff8801;
   opacity: 0.4;
 }
 
 .hero .wave3 use {
   animation: move-forever3 6s linear infinite;
   animation-delay: -2s;
-  fill: var(--default-color);
+  fill: #0400728a;
 }
 
 @keyframes move-forever1 {
@@ -986,16 +982,17 @@ section,
 
 .about .content h3 {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 19px;
   padding: 10px 20px;
-  background: color-mix(in srgb, var(--accent-color), transparent 95%);
+  background: color-mix(in srgb, var(--accent-color), rgb(0, 18, 121) 95%);
   color: var(--accent-color);
   border-radius: 7px;
   display: inline-block;
 }
 
 .about .content h2 {
+  color: rgb(255, 166, 0);
   font-weight: 700;
 }
 
@@ -1005,9 +1002,9 @@ section,
 
 .about .content .read-more {
   background: var(--accent-color);
-  color: var(--contrast-color);
+  color: #000000;
   font-family: var(--heading-font);
-  font-weight: 500;
+  font-weight: 800;
   font-size: 16px;
   letter-spacing: 1px;
   padding: 12px 24px;
@@ -1035,12 +1032,15 @@ section,
 }
 
 .about .icon-box {
-  background-color: var(--surface-color);
+  background-color: rgba(255, 246, 236, 0.39); /* Semi-transparent white background */
   padding: 50px 40px;
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   transition: all 0.3s ease-out 0s;
+  backdrop-filter: blur(10px); /* Adds the blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Ensures compatibility with Safari */
 }
+
 
 .about .icon-box i {
   width: 80px;
