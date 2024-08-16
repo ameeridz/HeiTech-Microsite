@@ -1089,13 +1089,16 @@ section,
 # Features Section
 --------------------------------------------------------------*/
 .features .features-item {
-  background-color: var(--surface-color);
+  background-color: rgba(255, 242, 224, 0.644);
   display: flex;
   align-items: center;
   padding: 20px;
   transition: 0.3s;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   position: relative;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .features .features-item i {
@@ -1145,7 +1148,7 @@ section,
 }
 
 .stats .stats-item {
-  background-color: var(--surface-color);
+  background-color: rgba(177, 237, 255, 0.411);
   margin-top: -27px;
   padding: 30px 30px 25px 30px;
   width: 100%;
@@ -1154,13 +1157,15 @@ section,
   box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   z-index: 0;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .stats .stats-item span {
   font-size: 36px;
   display: block;
   font-weight: 700;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: rgb(255, 219, 141);
 }
 
 .stats .stats-item p {
